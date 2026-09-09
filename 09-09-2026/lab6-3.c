@@ -2,18 +2,18 @@
 //09=-09-2026
 # include<stdio.h>
 
-void swap(char *name); 
+void swap(char *name);//Functiuon declaration 
 int main()
 {
 	char name[100];
 	printf("Enter name: ");
 	fgets(name, sizeof(name), stdin);
-	swap(name);
+	swap(name);//function call
 	return 0;
 }
 
 
-void swap(char *name)
+void swap(char *name)//swap code
 {
 	char t;
 	t = name[0];
